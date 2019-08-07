@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>
+            Calculator
+        </title>
+        
+    </head>
+    <script src="calculator.js"></script>
+    <body>
+        <div>
+            <input type="text" id="inputNumber" placeholder=""><br>
+            <tr>
+                <td>
+                <input type="button" id='one' value="1" onclick="store('1')" >
+                <input type="button" id='two' value="2" onclick="store('2')" >
+                <input type="button" id='three' value="3" onclick="store('3')">
+                <input type="button" id='add' value="+" onclick="store('+')"">
+            </tr><br>
+            <tr>
+                <td>
+                <input type="button" id='four' value="4" onclick="inputNumber.value+='4',sampleCalculate.store()" >
+                <input type="button" id='five' value="5" onclick="inputNumber.value+='5',sampleCalculate.store()" >
+                <input type="button" id='six' value="6" onclick="inputNumber.value+='6',sampleCalculate.store()">
+                <input type="button" id='subtract' value="-" onclick="sampleCalculate.add()" >
+            </tr><br>
+            <tr>
+                <td>
+                <input type="button" id='7'  onclick="inputNumber.value+='7',sampleCalculate.store()">
+                <input type="button" id='8' value="8" onclick="inputNumber.value+='8',sampleCalculate.store()" >
+                <input type="button" id='9' value="9" onclick="inputNumber.value+='9',sampleCalculate.store()" >
+                <input type="button" id='div' value="/" >
+            </tr><br>
+            <tr>
+                <td>
+                <input type="button" id='clear' value="C" >
+                <input type="button" id='zero' value="0" >
+                <input type="button" id='multiply' value="*" >
+                <input type="button" id='equal' value="operate()" >
+            </tr><br>
+            </tr>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <title> Jquery Validation</title>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.js"></script>
+        <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+  <!--<link rel="stylesheet" href="jquery-ui-theme.css" />-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" integrity="sha256-p6xU9YulB7E2Ic62/PX+h59ayb3PBJ0WFTEQxq0EjHw=" crossorigin="anonymous" />
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/dark-hive/jquery-ui.min.css" integrity="sha256-eZniZ8LGwFHGy3Dndt7l7eKikb8Dg+d2e1AvTP5NWPg=" crossorigin="anonymous" />-->
+    <script type="text/javascript">
+    $(document).ready(()=>
+    {
+    console.log('jquery onload/ready is called');
+    $('#signinpage').hide()
+    $('#signuppage').hide()
+    $('#welcome').hide()
+    $('#registered').hide()
+
+    $('#signin').click(()=>{
+        $('#signinpage').show(),
+        $('#signuppage').hide()
+        });
+
+    $('#signup').click(()=>{
+        $('#signuppage').show(),
+        $('#signinpage').hide()
+        });
+    $('#login').click(()=>{
+        $('#formLogin').validate({
+            rules:{
+                username:'required',
+                password:'required'
+            }
+        });
+       });
+    $('#btn-register').click(()=>{
+        $('#frm-register').validate({
+            rules:{
+                name: 'required',
+                email: 'required',
+                password:'required',
+                passwordre:'required'
+            }
+        });
+        
+    });
+       $('#save').button(); 
+       $('#tabs').tabs({
+           active: 0
+       });
+       $('#top-menu').menu({
+          
+       });
+       
+       
+       
+    });
+    </script>
+ 
+    </head>
+    <body>
+    <div id="tabs">
+        <ul>
+            <!-- <li><a href="#signinpage">Login</a></li> -->
+            <!-- <li><a href="#signuppage">Register</a></li> -->
+           <li> <input type="button" id="signin" value="sign in"> </li>
+            <li><input type="button" id="signup" value="sign up"></li>
+        </ul>
+        <fieldset id="signinpage">
+                <!-- <legend>Login Form</legend> -->
+                      <form action="" id="formLogin">
+                          <p>Username</p>
+                          <input type="text" name="username" placeholder="Enter username" id="name">
+                          <p>Password</p>
+                          <input type="text" name="password" placeholder="Enter Password" id="password">
+                         
+                          <input type="submit" name="submit" value="submit"  id="login">
+                      </form>
+               
+                      </fieldset>
+                      <fieldset id="signuppage">
+                          <!-- <legend>Register </legend> -->
+                    
+                      <form action="" id="frm-register">
+                          <p>Username</p>
+                          <input type="text" name="name" placeholder="Enter username" id="name">
+                          <p>email</p>
+                          <input type="text" name="email" placeholder="Enter email" id="email">
+                          <p>Contact </p>
+                          <input type="number" name="number" placeholder="Enter Contact number" id="contact">
+                          <p>Password</p>
+                          <input type="text" name="password" placeholder="Enter password" id="password">
+                          <p>Enter password again </p>
+                          <input type="text" name="passwordre" placeholder="reenter password" id="passwordRe">
+              
+              
+                          <input type="submit" name="submit" value="submit" id="btn-register">
+                      </form>
+                   
+                      </fieldset>
+                      <div id="welcome">
+                          <img src="C:\Users\SobheshTripathy\Documents\image.jpg" >
+                      </div>
+                      <div id="registered">
+                            <img src="C:\Users\SobheshTripathy\Documents\registered.jpg" >
+                        </div>
+       
+
+    
+</body>
+</html>

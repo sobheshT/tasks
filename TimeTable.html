@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>
+            Time Table
+        </title>
+        <script src="TimeTable.js"></script>
+    </head>
+    <style>
+        table, th, td {
+  border: 1px solid black;
+}
+    </style>
+    <body>
+        <fieldset style="width:600px"><legend>ADD TEACHER</legend>
+       
+            ID:   &nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="ID">  <br> <br>
+            Name:     <input type="text" id="name"> <br> <br>
+            Subjects: <select id="skill">
+                <option>--select--</option>
+                <option value="Math">Mathematics</option>
+                <option value="English">English</option>
+                <option value="Chemistry">Chemistry</option>
+                <option value="Physics">Physics</option>
+                <option value="cs">Computer Science</option>
+                <option value="sports">Sports</option>
+            </select>
+            <br/><br/>
+            
+            <input type="button" value="Save Data" onclick="store()">
+            <!-- <input type="button" value="Generate Table" onclick="store()"> -->
+        </fieldset>
+        <fieldset style="width:600px"><legend>Subject Assignment</legend>
+            Time-slot:<select id="time">
+                    <option>--select--</option>
+                    <option value="10:00-11:00">10:00-11:00</option>
+                    <option value="11:00-12:00">11:00-12:00</option>
+                    <option value="12:00-01:00">12:00-01:00</option>
+                    <option value="01:00-02:00">01:00-02:00</option>
+                    <option value="02:00-03:00">02:00-03:00</option>
+                    <option value="03:00-04:00">03:00-04:00</option>
+                </select>
+            Subjects: <select id="Subject">
+                <option>--select--</option>
+                <option value="Math">Mathematics</option>
+                <option value="English">English</option>
+                <option value="Chemistry">Chemistry</option>
+                <option value="Physics">Physics</option>
+                <option value="cs">Computer Science</option>
+                <option value="sports">Sports</option>
+            </select>
+            ID: <select id="manualID">
+                    <option>--select--</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+
+            <br/><br/>
+            <input type="button" value="Assign" onclick="assign()">
+        </fieldset>
+           <h1>Time Table</h1>
+           <table style="width:100%"">
+               <tr>
+                   
+                   <td>10:00-11:00</td>
+                   <td>11:00-12:00</td>
+                   <td>12:00-01:00</td>
+                   <td>01:00-02:00</td>
+                   <td>02:00-03:00</td>
+                   <td>03:00-04:00</td>
+               </tr>
+               <tr>
+                    <td id="s1"></td>
+                    <td id="s2"></td>
+                    <td id="s3"></td>
+                    <td id="s4"></td>
+                    <td id="s5"></td>
+                    <td id="s6"></td>
+                </tr>
+               
+           </table>
+    </body>
+</html>

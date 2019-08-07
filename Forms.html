@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>
+    Forms
+</title>
+<style type ="text/CSS" >
+input[type="text"],input[type="email"],input[type="tel"],input[type="number"]{
+    border: 1px solid gold;
+    border-radius: 4px;
+    height: 25px;
+}
+input[type="submit"]{
+    background:hotpink
+}
+fieldset{
+    border: solid;
+    border-color:blue;
+    border-radius:3.5 px;
+    margin: 10 10 0 10px;
+    width: 40%;
+    float: left;
+}
+fieldset legend{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: blueviolet;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+}
+nav ul li a:hover{
+    color:chartreuse;
+}
+nav ul li a:visited{
+    color: #d83535;
+}
+body{
+    background: url(img.jpg);
+    background-size: 1600px;
+}
+</style>
+    </head>
+    <body>
+        <div>
+            <section>
+                <nav>
+                    
+                        <a href="">Home</a>
+                        <a href="">About Us</a>
+                        <a href="http://github.com" target="blank">contact</a>
+                    
+                </nav>
+            </section>
+        </div>
+            <fieldset><legend>User Details</legend>
+        <form  >
+        <table border="1">
+           
+            <tbody>
+                <tr>
+                    <th>
+                       <label>First name</label> 
+                    </th>
+                    <td>
+                         <input type="text" name="fname" placeholder="your f name"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                       <label>email</label> 
+                    </th>
+                    <td>
+                        <input type="email" name="email-name" placeholder="email-addrs"/>
+                    </td>
+                </tr>
+                <tr>
+                        <th>
+                           <label>Phone</label> 
+                        </th>
+                        <td>
+                            <input type="tel" name="number" placeholder="contact number" />
+                        </td>
+                    </tr>
+                    <tr>
+                            <th>
+                              <label>Age</label>  
+                            </th>
+                            <td>
+                                <input type="number" name="number" placeholder="age" max="110" min="18"/>
+                            </td>
+                        </tr>
+                        <tr>
+                                <th>
+                                    <label for="bbc">DOB</label>
+                                </th>
+                                <td>
+                                    <input type="date" name="number" placeholder="date of birth" max="500" min="100"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                    <th>
+                                        <label>Time</label>
+                                    </th>
+                                    <td><input type="time" name="time" placeholder="age" max="110" min="18"/></td>
+                                </tr>
+                <tr>
+                    <td colspan="2"> 
+                        <input  type="submit" value="Save" name="btn-save" formaction="" formmethod="GET" />
+                    </td>
+                </tr>
+
+            </body>
+        </table>
+    </form>
+</fieldset>
+<fieldset>
+    <legend>
+        Fields
+    </legend>
+    <em>Hello</em>
+    <br/>
+    <bdo dir="ltr">Hello How are you</bdo>
+    <hr/>
+    it is an interesting day. <br />
+    <blockquote>
+        The poor dies , who cares. <br />
+    </blackquote>
+    <code>
+        System.out.println("Hello");<br />
+        int i=10;<br />
+        if(i &gt; 11){<br />
+           &nbsp; System.out.println("Hello");<br />
+        }
+    </code>
+</fieldset>
+    </body>
+    <!-- <div> -->
+        <!-- <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" /> -->
+    <!-- </div> -->
+</html>

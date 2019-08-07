@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>
+            Graphics
+        </title>
+    </head>
+    <body>
+        <svg>
+            <circle  id="my-circle" cx="100" cy="100" r="50"
+            fill="purple" stroke="green"></circle>
+            
+            <animate 
+            xlink:href="#my-circle"
+            attributeName="cx"
+            from="50"
+            to="450" 
+            dur="10s"
+             />
+        </svg>
+        <svg>
+                <rect width="100" height="120" x="10" y="10"
+                fill="purple" stroke="green"></rect>
+                <text x="90" y="90">Hello</text>
+                <circle cx="100" cy="70" r="50"
+            fill="black" stroke="green"></circle>
+            <text x="90" y="90">Hello</text>
+     
+            </svg>
+            <svg>
+                    <rect width="100" height="120" x="10" y="10" fill="url(#custom-gradient)">
+                            
+                    </rect>
+                    <defs>
+                            <linearGradient id="custom-gradient">
+                                <stop offset="10%" stop-color="blue"></stop>
+                                <stop offset="30%" stop-color="green"></stop>
+                                <stop offset="60%" stop-color="black"></stop>
+                            </linearGradient>
+                        </defs>
+                    
+                    <!-- <animate attributeName="x" dur="10s" from="-20" to ="50" repeatCount="indefinite" "></animate> -->
+                    </rect>
+                    
+                </svg>
+    </body>
+</html>
